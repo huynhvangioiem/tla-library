@@ -265,4 +265,12 @@ html {
   }
 }
 /* Responsive */
-@import "resopsive.scss";
+@import "responsive.scss";
+
+.outdated-notice {
+  padding: 10px 16px;
+  text-align: center;
+  background-color: #fff3cd;
+  color: #856404;
+  font-size: 14px;
+}
