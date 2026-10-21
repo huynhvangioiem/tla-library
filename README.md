@@ -1,31 +1,29 @@
 # TLA Library
 
-A personal portfolio website and custom CSS/SCSS component library showcasing reusable UI components.
+A small CSS/SCSS component library built in 2021 as a university project.
+
+> **Outdated.** This is an early piece of work, kept for reference and no longer maintained.
+> The home page (`index.html`) is the student CV page I made at the time, not a current profile.
+> For up-to-date work, see my GitHub profile.
 
 ## Overview
 
-TLA Library is a dual-purpose project:
-- **Portfolio Site**: Professional profile showcasing skills, experience, and projects
-- **UI Component Library**: Custom CSS framework with reusable components including grid system, buttons, navigation, and toast notifications
+The repository holds two things:
+- **UI Component Library** (`TLALib/`): a custom CSS framework with a grid system, buttons, navigation and toast notifications
+- **Demo pages**: `index.html` is the old student CV page built with the library; `library.html` documents the components
 
 ## Live Demo
 
-Visit the live site: [TLA Library on GitHub Pages](https://huynhvangioiem.github.io/tla-library/)
+[TLA Library on GitHub Pages](https://huynhvangioiem.github.io/tla-library/) opens the old student CV page.
+The component documentation is at [library.html](https://huynhvangioiem.github.io/tla-library/library.html).
 
 ## Features
 
-### Portfolio
-- Responsive personal profile page
-- Skills and experience showcase
-- Social media integration
-- Mobile-friendly navigation
-
-### Component Library
-- **12-Column Grid System**: Responsive layout with PC, Tablet, and Mobile breakpoints
+- **12-Column Grid System**: Responsive layout with desktop, tablet (`col-m`) and mobile (`col-s`) columns
 - **Buttons**: Multiple variants (primary, secondary, success, danger, warning, info, outline, rounded, social)
 - **Navigation**: Dropdown menus with smooth transitions
 - **Toast Notifications**: Animated notifications with auto-dismiss functionality
-- **Form Elements**: Styled input fields and form components
+- **Form Elements**: a single `.form-control` rule that makes an input full width
 
 ## Technologies
 
@@ -54,8 +52,8 @@ tla-library/
 │       ├── _form.scss        # Form styles
 │       └── _reset.scss       # CSS reset
 ├── img/                       # Image assets
-├── index.html                 # Portfolio homepage
-├── librabry.html              # Library documentation
+├── index.html                 # Old student CV page
+├── library.html               # Library documentation
 ├── script.js                  # Main JavaScript
 ├── style.css                  # Main stylesheet
 ├── TLALibrary.vs1.min.css    # Minified library CSS
@@ -68,8 +66,8 @@ tla-library/
 
 ```html
 <div class="row">
-  <div class="col pc-6 t-12 m-12">Column 1</div>
-  <div class="col pc-6 t-12 m-12">Column 2</div>
+  <div class="col-6 col-m-12 col-s-12">Column 1</div>
+  <div class="col-6 col-m-12 col-s-12">Column 2</div>
 </div>
 ```
 
@@ -78,7 +76,7 @@ tla-library/
 ```html
 <button class="btn btn-primary">Primary</button>
 <button class="btn btn-outline-success">Outline Success</button>
-<button class="btn btn-rounded-danger">Rounded Danger</button>
+<button class="btn btn-rounded btn-danger">Rounded Danger</button>
 ```
 
 ### Toast Notifications
@@ -87,7 +85,7 @@ tla-library/
 toast({
   title: "Success",
   message: "Your action was completed successfully!",
-  type: "success",
+  style: "success",
   duration: 5000
 });
 ```
@@ -107,9 +105,9 @@ toast({
 
 ## Responsive Breakpoints
 
-- **PC (Desktop)**: Default styles
-- **Tablet**: 768px and below
-- **Mobile**: 480px and below
+- **Desktop**: default styles
+- **Tablet** (`col-m`): 1024px and below
+- **Mobile** (`col-s`): 740px and below
 
 ## Installation
 
@@ -118,9 +116,9 @@ toast({
    git clone https://github.com/huynhvangioiem/tla-library.git
    ```
 
-2. Open `index.html` in your browser to view the portfolio
+2. Open `index.html` in your browser to view the old CV page
 
-3. Open `librabry.html` to view the component library documentation
+3. Open `library.html` to view the component library documentation
 
 ### Using the Library in Your Project
 
