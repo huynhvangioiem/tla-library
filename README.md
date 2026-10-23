@@ -5,6 +5,7 @@ A small CSS/SCSS component library built in 2021 as a university project.
 > **Outdated.** This is an early piece of work, kept for reference and no longer maintained.
 > The home page (`index.html`) is the student CV page I made at the time, not a current profile.
 > For up-to-date work, see my GitHub profile.
+> The code dates from August–October 2021; commits from 2026 only update this README and the repository name.
 
 ## Overview
 
