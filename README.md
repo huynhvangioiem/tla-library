@@ -1,75 +1,34 @@
 # TLA Library
 
-A personal portfolio website and custom CSS/SCSS component library showcasing reusable UI components.
+A small CSS/SCSS component library I wrote at university: a 12-column grid, buttons, a dropdown navigation bar and animated toast messages. It is built with SCSS and jQuery, and it is dated now. I keep it as an early piece of work.
 
-## Overview
+**Live demo:** [huynhvangioiem.github.io/tla-library](https://huynhvangioiem.github.io/tla-library/) — the documentation page, with a live example and code for each component.
 
-TLA Library is a dual-purpose project:
-- **Portfolio Site**: Professional profile showcasing skills, experience, and projects
-- **UI Component Library**: Custom CSS framework with reusable components including grid system, buttons, navigation, and toast notifications
+## What is in it
 
-## Live Demo
+- **Grid**: 12 columns with `col-N`, `col-m-N` (tablet) and `col-s-N` (mobile) classes, plus offsets such as `col-o-1`.
+- **Buttons**: `btn` with a colour (`btn-primary`, `btn-secondary`, `btn-success`, `btn-danger`, `btn-warning`, `btn-info`, `btn-light`, `btn-dark`), `btn-outline-*`, `btn-rounded` and `btn-social`.
+- **Navigation**: `navbar` with nested dropdowns and a toggle button on small screens.
+- **Toast**: `toast({ title, message, style, duration, iconType })` shows an animated message that closes itself.
+- **Forms**: only `.form-control { width: 100% }` for now.
 
-Visit the live site: [TLA Library on GitHub Pages](https://huynhvangioiem.github.io/tla-library/)
+## Use it
 
-## Features
+Include the library after jQuery and Font Awesome (the toast and navbar icons use Font Awesome):
 
-### Portfolio
-- Responsive personal profile page
-- Skills and experience showcase
-- Social media integration
-- Mobile-friendly navigation
-
-### Component Library
-- **12-Column Grid System**: Responsive layout with PC, Tablet, and Mobile breakpoints
-- **Buttons**: Multiple variants (primary, secondary, success, danger, warning, info, outline, rounded, social)
-- **Navigation**: Dropdown menus with smooth transitions
-- **Toast Notifications**: Animated notifications with auto-dismiss functionality
-- **Form Elements**: Styled input fields and form components
-
-## Technologies
-
-- HTML5
-- CSS3 / SCSS
-- JavaScript / jQuery
-- Font Awesome 5.15.4
-- Highlight.js (for code examples)
-
-## Project Structure
-
-```
-tla-library/
-├── TLALib/                    # Component library source
-│   ├── CSS/
-│   │   └── TLA.css           # Compiled library CSS
-│   ├── JS/
-│   │   └── TLA.js            # Library JavaScript
-│   └── SCSS/                  # SCSS source files
-│       ├── TLA.scss          # Main entry point
-│       ├── _config.scss      # Colors & spacing config
-│       ├── _layout.scss      # Grid system
-│       ├── _nav.scss         # Navigation styles
-│       ├── _button.scss      # Button components
-│       ├── _toast.scss       # Toast notifications
-│       ├── _form.scss        # Form styles
-│       └── _reset.scss       # CSS reset
-├── img/                       # Image assets
-├── index.html                 # Portfolio homepage
-├── librabry.html              # Library documentation
-├── script.js                  # Main JavaScript
-├── style.css                  # Main stylesheet
-├── TLALibrary.vs1.min.css    # Minified library CSS
-└── TLALibrary.vs1.min.js     # Minified library JS
+```html
+<link rel="stylesheet" href="TLALib/CSS/TLA.css">
+<script src="TLALib/JS/TLA.js"></script>
 ```
 
-## Usage
+Minified copies are in `TLALibrary.vs1.min.css` and `TLALibrary.vs1.min.js`.
 
-### Grid System
+### Grid
 
 ```html
 <div class="row">
-  <div class="col pc-6 t-12 m-12">Column 1</div>
-  <div class="col pc-6 t-12 m-12">Column 2</div>
+  <div class="col-6 col-m-12 col-s-12">Column 1</div>
+  <div class="col-6 col-m-12 col-s-12">Column 2</div>
 </div>
 ```
 
@@ -77,78 +36,43 @@ tla-library/
 
 ```html
 <button class="btn btn-primary">Primary</button>
-<button class="btn btn-outline-success">Outline Success</button>
-<button class="btn btn-rounded-danger">Rounded Danger</button>
+<button class="btn btn-outline-success">Outline success</button>
+<button class="btn btn-rounded btn-danger">Rounded danger</button>
 ```
 
-### Toast Notifications
+### Toast
+
+Add an empty `<div id="toast"></div>` to the page, then:
 
 ```javascript
 toast({
   title: "Success",
-  message: "Your action was completed successfully!",
-  type: "success",
-  duration: 5000
+  message: "Your action was completed.",
+  style: "success", // or "success-colored", "success-outline", ...
+  duration: 5000,
 });
 ```
 
-## Color Palette
+## Breakpoints
 
-| Color     | Hex Code  |
-|-----------|-----------|
-| Primary   | `#0069d9` |
-| Secondary | `#5a6268` |
-| Success   | `#218838` |
-| Danger    | `#c82333` |
-| Warning   | `#e0a800` |
-| Info      | `#138496` |
-| Light     | `#e2e6ea` |
-| Dark      | `#23272b` |
+| Range | Used for |
+|-------|----------|
+| 1441px and up | large desktop |
+| 1025px – 1280px | desktop |
+| 741px – 1024px | tablet (`col-m-*`) |
+| 740px and below | mobile (`col-s-*`) |
 
-## Responsive Breakpoints
+## Structure
 
-- **PC (Desktop)**: Default styles
-- **Tablet**: 768px and below
-- **Mobile**: 480px and below
-
-## Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/huynhvangioiem/tla-library.git
-   ```
-
-2. Open `index.html` in your browser to view the portfolio
-
-3. Open `librabry.html` to view the component library documentation
-
-### Using the Library in Your Project
-
-Include the minified CSS and JS files:
-
-```html
-<link rel="stylesheet" href="TLALibrary.vs1.min.css">
-<script src="TLALibrary.vs1.min.js"></script>
 ```
-
-Or include the full versions for development:
-
-```html
-<link rel="stylesheet" href="TLALib/CSS/TLA.css">
-<script src="TLALib/JS/TLA.js"></script>
+index.html          documentation page
+style.css           styles for the documentation page (compiled from SCSS/)
+script.js           helpers for the documentation page
+SCSS/               source of style.css
+TLALib/             the library: CSS/, JS/ and SCSS/ source
+TLALibrary.vs1.min.*  minified build
 ```
 
 ## Author
 
-**Huynh Van Gioi Em (TLA)**
-
-- Email: huynhvangioiem@gmail.com
-- GitHub: [@huynhvangioiem](https://github.com/huynhvangioiem)
-
-## License
-
-This project is open source and available for personal and educational use.
-
----
-
-© 2021 TLA. All rights reserved.
+Huynh Van Gioi Em — [@huynhvangioiem](https://github.com/huynhvangioiem)

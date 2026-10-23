@@ -7,6 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TLA Library</title>
 
+  <link rel="stylesheet"
+    href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.16.2/build/styles/atom-one-light.min.css">
+  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.16.2/build/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
     integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 
@@ -22,32 +27,14 @@
 </head>
 
 <body>
-  <div class="container home">
-    <div class="row banner">
-      <div class="col-3 col-m-3 col-s-3 col-o-1 col-m-o-1 anhdaidien">
-        <div class="row">
-          <img class="img-responsive img-thumbnail" src="img/Anhdaidien.jpg" alt="">
-        </div>
-      </div>
-      <div class="col-12 col-m-12 col-s-12 info">
-        <div class="row name">
-          <div class="col-12 col-m-12 col-s-12">
-            <h1>Huynh Van Gioi Em - TLA</h1>
-            <h3>Web Developer</h3>
-          </div>
-        </div>
-        <div class="row contact">
-          <div class="col-6 col-m-7 col-s-0">
-            <h4><i class="fas fa-calendar-alt"></i>23/11/199X</h4>
-            <h4><i class="fas fa-envelope"></i><a href="mailto:huynhvangioiem@gmail.com">huynhvangioiem@gmail.com</a>
-            </h4>
-          </div>
-          <div class="col-6 col-m-5 col-s-0">
-            <h4><i class="fas fa-phone-alt"></i><a href="tel:+84335687425">0335687425</a></h4>
-          </div>
-        </div>
-      </div>
+  <div class="container library">
+    <!-- Welcome -->
+    <div class=" row welcome">
+      <marquee behavior="" direction="">
+        WELCOME TO TLA LIBRARY!
+      </marquee>
     </div>
+    <!-- Menu -->
     <div class="row menu">
       <nav class="navbar navbar-success">
         <a class="navbar-brand">TLA</a>
@@ -55,278 +42,1335 @@
         <div class="navbar-collapse" id="mainMenu">
           <ul class="navbar-nav navbar-left">
             <li class="nav-item">
-              <a class="nav-link" href="./">Home</a>
+              <a class="nav-link" href="https://github.com/huynhvangioiem/tla-library">GitHub</a>
             </li>
             <li class="nav-item">
               <ul class="sub-nav">
                 <li class="nav-item">
                   <ul class="sub-nav">
-                    <li class="nav-item"><a href="./librabry.html#basicLayout">Basic</a></li>
-                    <li class="nav-item"><a href="./librabry.html#nestedLayout">Nested</a></li>
-                    <li class="nav-item"><a href="./librabry.html#responsiveLayout">Responsive</a></li>
-                    <li class="nav-item"><a href="./librabry.html#exampleLayout">Example</a></li>
+                    <li class="nav-item"><a href="#basicLayout">Basic</a></li>
+                    <li class="nav-item"><a href="#nestedLayout">Nested</a></li>
+                    <li class="nav-item"><a href="#responsiveLayout">Responsive</a></li>
+                    <li class="nav-item"><a href="#exampleLayout">Example</a></li>
                   </ul>
-                  <a href="./librabry.html#TLA_layout">Layout</a>
+                  <a href="#TLA_layout">Layout</a>
                 </li>
                 <li class="nav-item">
                   <ul class="sub-nav">
-                    <li class="nav-item"><a href="./librabry.html#navBasic">Basic Example</a></li>
-                    <li class="nav-item"><a href="./librabry.html#navColor">Color schemes</a></li>
+                    <li class="nav-item"><a href="#navBasic">Basic Example</a></li>
+                    <li class="nav-item"><a href="#navColor">Color schemes</a></li>
                   </ul>
-                  <a href="./librabry.html#TLA_nav">Navigation</a>
+                  <a href="#TLA_nav">Navigation</a>
                 </li>
                 <li class="nav-item">
                   <ul class="sub-nav">
-                    <li class="nav-item"><a href="./librabry.html#basicBtn">Basic Buttons</a></li>
-                    <li class="nav-item"><a href="./librabry.html#btnOutline">Outline Buttons</a></li>
-                    <li class="nav-item"><a href="./librabry.html#btnRounded">Rounded Buttons</a></li>
-                    <li class="nav-item"><a href="./librabry.html#btnSocial">Social Buttons</a></li>
+                    <li class="nav-item"><a href="#basicBtn">Basic Buttons</a></li>
+                    <li class="nav-item"><a href="#btnOutline">Outline Buttons</a></li>
+                    <li class="nav-item"><a href="#btnRounded">Rounded Buttons</a></li>
+                    <li class="nav-item"><a href="#btnSocial">Social Buttons</a></li>
                   </ul>
-                  <a href="./librabry.html#TLA_button">Button</a>
+                  <a href="#TLA_button">Button</a>
                 </li>
                 <li class="nav-item">
                   <ul class="sub-nav">
-                    <li class="nav-item"><a href="./librabry.html#basicToast">Basic Toast</a></li>
-                    <li class="nav-item"><a href="./librabry.html#coloredToast">colored Toast</a></li>
-                    <li class="nav-item"><a href="./librabry.html#outlineToast">Outline Toast</a></li>
+                    <li class="nav-item"><a href="#basicToast">Basic Toast</a></li>
+                    <li class="nav-item"><a href="#coloredToast">colored Toast</a></li>
+                    <li class="nav-item"><a href="#outlineToast">Outline Toast</a></li>
                   </ul>
-                  <a href="./librabry.html#TLA_Toast">Toast</a>
+                  <a href="#TLA_Toast">Toast</a>
                 </li>
               </ul>
-              <a href="./librabry.html" class="nav-link">TLA Library</a>
-            </li>
-            <li class="nav-item">
-              <ul class="sub-nav">
-                <li class="nav-item"><a href="./#summary">Summary</a></li>
-                <li class="nav-item"><a href="./#education">Education</a></li>
-                <li class="nav-item"><a href="./#skills">Skills</a></li>
-                <li class="nav-item"><a href="./#careerObjective">Career objective</a></li>
-                <li class="nav-item"><a href="./#skillsAtWork">Skills at Work</a></li>
-                <li class="nav-item"><a href="./#workExperience">Work Experience</a></li>
-              </ul>
-              <a class="nav-link" href="./">My Profile</a>
-            </li>
-            <li class="nav-item">
-              <ul class="sub-nav">
-                <li class="nav-item"><a href="https://huynhvangioiem.github.io/TLA_PlayerMusic/">TLA Mucsic Players</a></li>
-                
-              </ul>
-              <a class="nav-link" href="#!">Entertainment</a>
-            </li>
-          </ul>
-          <ul class="navbar-nav navbar-right">
-            <li class="nav-item nav-search">
-              <form action="" method="get">
-                <input type="text" name="search" id="" disabled placeholder="Search">
-                <button type="submit" disabled><i class="fas fa-search"></i></button>
-              </form>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Sign In</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Sign Out</a>
+              <a href="#" class="nav-link">TLA Library</a>
             </li>
           </ul>
         </div>
       </nav>
     </div>
-    <div class="row main">
-      <div class="col-4 col-m-4 col-s-12 left">
-        <div class="row items" id="summary">
-          <div class="col-12 col-m-12 col-s-12 title">
-            <h3>summary</h3>
-          </div>
-          <div class="col-12 col-m-12 col-s-12 content">
-            <p>Hello! I'm Gioi Em, a student about to graduate in information technology. With the knowledge, skills and
-              experience that I have accumulated during my university years, I believe that I can bring certain values
-              to the company. In life, I am a progressive person. Advancement and happiness are the motivation for me to
-              constantly learn and try, to become a professional programmer. So, I hope to become a member of the
-              company and contribute to the development of the company.</p>
-          </div>
-        </div>
-        <div class="row items" id="education">
-          <div class="col-12 col-m-12 col-s-12 title">
-            <h3>education</h3>
-          </div>
-          <div class="col-12 col-m-12 col-s-12 content">
-            <h4 class="subtitle">CanTho University</h4>
-            <p>Major: Information Technology</p>
-          </div>
-        </div>
-        <div class="row items" id="skills">
-          <div class="col-12 col-m-12 col-s-12 title">
-            <h3>skills</h3>
-          </div>
-          <div class="col-12 col-m-12 col-s-12 content">
-            <ul>
-              <li>
-                <p>Team work</p>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="far fa-star"></i>
-              </li>
-              <li>
-                <p>Self learning</p>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="far fa-star"></i>
-              </li>
-              <li>
-                <p>Time management</p>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="far fa-star"></i>
-              </li>
-              <li>
-                <p>Presentation</p>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="row items" id="certifications">
-          <div class="col-12 col-m-12 col-s-12 title">
-            <h3>certifications</h3>
-          </div>
-          <div class="col-12 col-m-12 col-s-12 content">
-            <p>- English level A</p>
-          </div>
-        </div>
-        <div class="row items" id="interest">
-          <div class="col-12 col-m-12 col-s-12 title">
-            <h3>interest</h3>
-          </div>
-          <div class="col-12 col-m-12 col-s-12 content">
-            <ul>
-              <li>Programming</li>
-              <li>Fishing</li>
-              <li>Cooking</li>
-              <li>Sport</li>
-            </ul>
+    <div class="row getstart">
+      <div class="col-12 col-m-12 col-s-12 title">Getting Started</div>
+      <div class="col-12 col-m-12 col-s-12 sub_title">1. Import jquery</div>
+      <div class="col-12 col-m-12 col-s-12 description">
+        <p>Click <a href="https://jquery.com/"><b><i>jquery.com</i></b></a> to learn more about jQuery.</p>
+      </div>
+      <div class="col-12 col-m-12 col-s-12 sub_title">2. Import Fontawesome</div>
+      <div class="col-12 col-m-12 col-s-12">
+        <p>Click <a href="https://fontawesome.com/"><b><i>fontawesome.com</i></b></a> to learn more about Fontawesome.
+        </p>
+      </div>
+      <div class="col-12 col-m-12 col-s-12 sub_title">3. Import TLA Library</div>
+      <div class="col-12 col-m-12 col-s-12 description">
+        <p>Copy the following code to import TLA Library</p>
+      </div>
+      <div class="col-12 col-m-12 col-s-12 code">
+        <pre>
+          <code class="html">
+&#60;link rel="stylesheet" href="https://huynhvangioiem.github.io/tla-library/TLALibrary.vs1.min.css"&#62;
+&#60;script src="https://huynhvangioiem.github.io/tla-library/TLALibrary.vs1.min.js"&#62;&#60;/script&#62;
+          </code>
+        </pre>
+      </div>
+    </div>
+    <!-- Layout -->
+    <div class="row" id="TLA_layout">
+      <div class="col-12 col-m-12 col-s-12 title">I. Layout</div>
+      <!-- Basic -->
+      <div class="col-12 col-m-12 col-s-12 sub_title" id="basicLayout">1. Basic Layout</div>
+      <div class="col-12 col-m-12 col-s-12 demo">
+        <div class="wrapDemo">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12">col-12</div>
+              <div class="col-6">col-6</div>
+              <div class="col-6">col-6</div>
+              <div class="col-4">col-4</div>
+              <div class="col-4">col-4</div>
+              <div class="col-4">col-4</div>
+              <div class="col-2">col-2</div>
+              <div class="col-2">col-2</div>
+              <div class="col-2">col-2</div>
+              <div class="col-2">col-2</div>
+              <div class="col-2">col-2</div>
+              <div class="col-2">col-2</div>
+              <div class="col-1">col-1</div>
+              <div class="col-1">col-1</div>
+              <div class="col-1">col-1</div>
+              <div class="col-1">col-1</div>
+              <div class="col-1">col-1</div>
+              <div class="col-1">col-1</div>
+              <div class="col-1">col-1</div>
+              <div class="col-1">col-1</div>
+              <div class="col-1">col-1</div>
+              <div class="col-1">col-1</div>
+              <div class="col-1">col-1</div>
+              <div class="col-1">col-1</div>
+            </div>
+            <div class="row">
+              <div class="col-12">col-12</div>
+              <div class="col-1">col-1</div>
+              <div class="col-11">col-11</div>
+              <div class="col-2">col-2</div>
+              <div class="col-10">col-10</div>
+              <div class="col-3">col-3</div>
+              <div class="col-9">col-9</div>
+              <div class="col-4">col-4</div>
+              <div class="col-8">col-8</div>
+              <div class="col-5">col-5</div>
+              <div class="col-7">col-7</div>
+              <div class="col-6">col-6</div>
+              <div class="col-6">col-6</div>
+              <div class="col-7">col-7</div>
+              <div class="col-5">col-5</div>
+              <div class="col-11">col-11</div>
+              <div class="col-1">col-1</div>
+            </div>
+            <div class="row">
+              <div class="col-2">col-2</div>
+              <div class="col-1">col-1</div>
+              <div class="col-4">col-4</div>
+              <div class="col-2">col-2</div>
+              <div class="col-3">col-3</div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-8 col-m-8 col-s-12">
-        <div class="row items" id="careerObjective">
-          <div class="col-12 col-m-12 col-s-12 title">
-            <h3>Career Objective</h3>
-          </div>
-          <div class="col-12 col-m-12 col-s-12 content">
-            <p>With the knowledge and skills that I have, I set short and long-term goals when working at the company as
-              follows:</p>
-            <ul>
-              * Short-Term Goals
-              <li>- Successful completion of the training program for newbies.</li>
-              <li>- Improve and enhance the skills of individuals for work.</li>
-              * Long-Term Goals
-              <li>- Master the professional knowledge and skills.</li>
-              <li>- Become a senior Developer.</li>
-            </ul>
+      <div class="col-12 col-m-12 col-s-12 code">
+        <pre>
+          <code class="html">
+&#60;!-- This is code for basic layout --&#62;
+&#60;div class="container-fluid"&#62;
+  &#60;div class="row"&#62;
+    &#60;div class="col-12"&#62;col-12&#60;/div&#62;
+
+    &#60;div class="col-6"&#62;col-6&#60;/div&#62;
+    &#60;div class="col-6"&#62;col-6&#60;/div&#62;
+
+    &#60;div class="col-4"&#62;col-4&#60;/div&#62;
+    &#60;div class="col-4"&#62;col-4&#60;/div&#62;
+    &#60;div class="col-4"&#62;col-4&#60;/div&#62;
+
+    &#60;div class="col-2"&#62;col-2&#60;/div&#62;
+    &#60;div class="col-2"&#62;col-2&#60;/div&#62;
+    &#60;div class="col-2"&#62;col-2&#60;/div&#62;
+    &#60;div class="col-2"&#62;col-2&#60;/div&#62;
+    &#60;div class="col-2"&#62;col-2&#60;/div&#62;
+    &#60;div class="col-2"&#62;col-2&#60;/div&#62;
+
+    &#60;div class="col-1"&#62;col-1&#60;/div&#62;
+    &#60;div class="col-1"&#62;col-1&#60;/div&#62;
+    &#60;div class="col-1"&#62;col-1&#60;/div&#62;
+    &#60;div class="col-1"&#62;col-1&#60;/div&#62;
+    &#60;div class="col-1"&#62;col-1&#60;/div&#62;
+    &#60;div class="col-1"&#62;col-1&#60;/div&#62;
+    &#60;div class="col-1"&#62;col-1&#60;/div&#62;
+    &#60;div class="col-1"&#62;col-1&#60;/div&#62;
+    &#60;div class="col-1"&#62;col-1&#60;/div&#62;
+    &#60;div class="col-1"&#62;col-1&#60;/div&#62;
+    &#60;div class="col-1"&#62;col-1&#60;/div&#62;
+    &#60;div class="col-1"&#62;col-1&#60;/div&#62;
+  &#60;/div&#62;
+  &#60;div class="row"&#62;
+    &#60;div class="col-12"&#62;col-12&#60;/div&#62;
+
+    &#60;div class="col-1"&#62;col-1&#60;/div&#62;
+    &#60;div class="col-11"&#62;col-11&#60;/div&#62;
+
+    &#60;div class="col-2"&#62;col-2&#60;/div&#62;
+    &#60;div class="col-10"&#62;col-10&#60;/div&#62;
+
+    &#60;div class="col-3"&#62;col-3&#60;/div&#62;
+    &#60;div class="col-9"&#62;col-9&#60;/div&#62;
+
+    &#60;div class="col-4"&#62;col-4&#60;/div&#62;
+    &#60;div class="col-8"&#62;col-8&#60;/div&#62;
+
+    &#60;div class="col-5"&#62;col-5&#60;/div&#62;
+    &#60;div class="col-7"&#62;col-7&#60;/div&#62;
+    
+    &#60;div class="col-6"&#62;col-6&#60;/div&#62;
+    &#60;div class="col-6"&#62;col-6&#60;/div&#62;
+
+    &#60;div class="col-7"&#62;col-7&#60;/div&#62;
+    &#60;div class="col-5"&#62;col-5&#60;/div&#62;
+
+    &#60;div class="col-11"&#62;col-11&#60;/div&#62;
+    &#60;div class="col-1"&#62;col-1&#60;/div&#62;
+  &#60;/div&#62;
+  &#60;div class="row"&#62;
+    &#60;div class="col-2"&#62;col-2&#60;/div&#62;
+    &#60;div class="col-1"&#62;col-1&#60;/div&#62;
+    &#60;div class="col-4"&#62;col-4&#60;/div&#62;
+    &#60;div class="col-2"&#62;col-2&#60;/div&#62;
+    &#60;div class="col-3"&#62;col-3&#60;/div&#62;
+  &#60;/div&#62;
+&#60;/div&#62;
+          </code>
+        </pre>
+      </div>
+      <!-- Nested -->
+      <div class="col-12 col-m-12 col-s-12 sub_title" id="nestedLayout">2. Nested Layout</div>
+      <div class="col-12 col-m-12 col-s-12 description">
+        <p>This demo looks like a basic website layout. we want you to understand that they can nested.</p>
+      </div>
+      <div class="col-12 col-m-12 col-s-12 demo nested">
+        <div class="wrapDemo">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12 col-m-12 col-s-12">
+                <p>Header</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 col-m-12 col-s-12">
+                <p>Navigation</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-3 col-m-3 col-s-3">
+                <p>Side Bar</p>
+              </div>
+              <div class="col-9 col-m-9 col-s-9">
+                <div class="row">
+                  <div class="col-12 col-m-12 col-s-12">
+                    <p>Body Area</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12 col-m-12 col-s-12">
+                    <p>This is list items</p>
+                  </div>
+                  <div class="col-3 col-m-3 col-s-3">
+                    <div class="row">
+                      <div class="col-12 col-m-12 col-s-12">
+                        <p>Item 1</p>
+                      </div>
+                      <div class="col-12 col-m-12 col-s-12">
+                        <p>Img</p>
+                      </div>
+                      <div class="col-5 col-m-5 col-s-5">
+                        <p>Quantity</p>
+                      </div>
+                      <div class="col-7 col-m-7 col-s-7">
+                        <p>Price</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3 col-m-3 col-s-3">
+                    <div class="row">
+                      <div class="col-12 col-m-12 col-s-12">
+                        <p>Item 2</p>
+                      </div>
+                      <div class="col-6 col-m-6 col-s-6">
+                        <p>Img-1</p>
+                      </div>
+                      <div class="col-6 col-m-6 col-s-6">
+                        <p>Img-2</p>
+                      </div>
+                      <div class="col-12 col-m-12 col-s-12">
+                        <p>Quantity</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3 col-m-3 col-s-3">
+                    <div class="row">
+                      <div class="col-12 col-m-12 col-s-12">
+                        <p>Item 3</p>
+                      </div>
+                      <div class="col-12 col-m-12 col-s-12">
+                        <p>Img</p>
+                      </div>
+                      <!-- <div class="col-5 col-m-5 col-s-5">Quantity</div> -->
+                      <div class="col-7 col-m-7 col-s-7">
+                        <p>Price</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3 col-m-3 col-s-3">
+                    <div class="row">
+                      <div class="col-12 col-m-12 col-s-12">
+                        <p>Item 4</p>
+                      </div>
+                      <div class="col-12 col-m-12 col-s-12">
+                        <p>Img</p>
+                      </div>
+                      <div class="col-5 col-m-5 col-s-5">
+                        <p>Quantity</p>
+                      </div>
+                      <div class="col-5 col-m-5 col-s-5">
+                        <p>Price</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 col-m-12 col-s-12">
+                <p></p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="row items" id="skillsAtWork">
-          <div class="col-12 col-m-12 col-s-12 title">
-            <h3>Skills at work</h3>
+      </div>
+      <div class="col-12 col-m-12 col-s-12 code">
+        <pre>
+          <code class="html">
+&#60;!-- This is code for nested layout --&#62;
+&#60;div class="container-fluid"&#62;
+&#60;div class="row"&#62;
+&#60;div class="col-12"&#62;Header&#60;/div&#62;
+&#60;/div&#62;
+&#60;div class="row"&#62;
+&#60;div class="col-12"&#62;Navigation&#60;/div&#62;
+&#60;/div&#62;
+&#60;div class="row"&#62;
+&#60;div class="col-3"&#62;Side Bar&#60;/div&#62;
+&#60;div class="col-9"&#62;
+  &#60;div class="row"&#62;
+      &#60;div class="col-12"&#62;Body Area&#60;/div&#62;
+  &#60;/div&#62;
+  &#60;div class="row"&#62;
+      &#60;div class="col-12"&#62;This is list items&#60;/div&#62;
+      &#60;div class="col-3"&#62;
+          &#60;div class="row"&#62;
+              &#60;div class="col-12"&#62;Item 1&#60;/div&#62;
+              &#60;div class="col-12"&#62;Img&#60;/div&#62;
+              &#60;div class="col-5"&#62;Quantity&#60;/div&#62;
+              &#60;div class="col-7"&#62;Price&#60;/div&#62;
+          &#60;/div&#62;
+      &#60;/div&#62;
+      &#60;div class="col-3"&#62;
+          &#60;div class="row"&#62;
+              &#60;div class="col-12"&#62;Item 2&#60;/div&#62;
+              &#60;div class="col-6"&#62;Img-1&#60;/div&#62;
+              &#60;div class="col-6"&#62;Img-2&#60;/div&#62;
+              &#60;div class="col-12"&#62;Quantity&#60;/div&#62;
+          &#60;/div&#62;
+      &#60;/div&#62;
+      &#60;div class="col-3"&#62;
+          &#60;div class="row"&#62;
+          &#60;div class="col-12"&#62;Item 3&#60;/div&#62;
+          &#60;div class="col-12"&#62;Img&#60;/div&#62;
+          &#60;!-- &#60;div class="col-5"&#62;Quantity&#60;/div&#62; --&#62;
+          &#60;div class="col-7"&#62;Price&#60;/div&#62; &#60;/div&#62;
+      &#60;/div&#62;
+      &#60;div class="col-3"&#62;
+          &#60;div class="row"&#62;
+              &#60;div class="col-12"&#62;Item 4&#60;/div&#62;
+              &#60;div class="col-12"&#62;Img&#60;/div&#62;
+              &#60;div class="col-5"&#62;Quantity&#60;/div&#62;
+              &#60;div class="col-5"&#62;Price&#60;/div&#62;
+          &#60;/div&#62;
+      &#60;/div&#62;
+  &#60;/div&#62;
+&#60;/div&#62;
+&#60;/div&#62; 
+&#60;div class="row"&#62; 
+&#60;div class="col-12"&#62;Footer&#60;/div&#62;
+&#60;/div&#62;
+&#60;/div&#62;
+          </code>
+        </pre>
+      </div>
+      <!-- Responsive -->
+      <div class="col-12 col-m-12 col-s-12 sub_title" id="responsiveLayout">3. Responsive Layout</div>
+      <div class="col-12 col-m-12 col-s-12 demo">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-2 col-m-4 col-s-12">col-2 col-m-4 col-s-12</div>
+            <div class="col-2 col-m-4 col-s-12">col-2 col-m-4 col-s-12</div>
+            <div class="col-2 col-m-4 col-s-12">col-2 col-m-4 col-s-12</div>
+            <div class="col-2 col-m-4 col-s-12">col-2 col-m-4 col-s-12</div>
+            <div class="col-2 col-m-4 col-s-12">col-2 col-m-4 col-s-12</div>
+            <div class="col-2 col-m-4 col-s-12">col-2 col-m-4 col-s-12</div>
           </div>
-          <div class="col-12 col-m-12 col-s-12 content">
-            <p>- I can design the UI for a website with HTML, CSS(SCSS) and JS as proficiently.</p>
-            <p>- I can also program back-end with PHP and MySQL.</p>
-            <p>- I have experience working with libraries and frameworks such as: JQuery, Bootstrap,...</p>
-            <p>- I also have knowledge of ReactJs.</p>
+          <div class="row">
+            <div class="col-3 col-m-6 col-s-6">col-3 col-m-6 col-s-6</div>
+            <div class="col-3 col-m-6 col-s-6">col-3 col-m-6 col-s-6</div>
+            <div class="col-3 col-m-6 col-s-6">col-3 col-m-6 col-s-6</div>
+            <div class="col-3 col-m-6 col-s-6">col-3 col-m-6 col-s-6</div>
+          </div>
+          <div class="row">
+            <div class="col-4 col-m-12 col-s-12">col-4 col-m-12 col-s-12</div>
+            <div class="col-4 col-m-12 col-s-12">col-4 col-m-12 col-s-12</div>
+            <div class="col-4 col-m-12 col-s-12">col-4 col-m-12 col-s-12</div>
+          </div>
+          <div class="row">
+            <div class="col-6 col-m-6 col-s-12">col-6 col-m-6 col-s-12</div>
+            <div class="col-6 col-m-6 col-s-12">col-6 col-m-6 col-s-12</div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-m-12 col-s-12">col-12 col-m-12 col-s-12</div>
+          </div>
+          <div class="row">
+            <div class="col-4 col-m-0 col-s-0">col-4 col-m-0 col-s-0</div>
+            <div class="col-8 col-m-12 col-s-12">col-8 col-m-12 col-s-12</div>
+          </div>
+          <div class="row">
+            <div class="col-5 col-m-6 col-s-0">col-5 col-m-6 col-s-0</div>
+            <div class="col-7 col-m-6 col-s-12">col-7 col-m-6 col-s-12</div>
+          </div>
+          <div class="row">
+            <div class="col-4 col-m-4 col-s-6">col-4 col-m-4 col-s-6</div>
+            <div class="col-4 col-m-4 col-s-6 col-o-4 col-m-o-4">col-4 col-m-4 col-s-6 col-o-4 col-m-o-4
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-4 col-m-4 col-s-12 col-o-4 col-m-o-4">col-4 col-m-4 col-s-12 col-o-4 col-m-o-4
+            </div>
           </div>
         </div>
-        <div class="row items" id="workExperience">
-          <div class="col-12 col-m-12 col-s-12 title">
-            <h3>WORK EXPERIENCE</h3>
-          </div>
-          <div class="col-12 col-m-12 col-s-12 content">
-            <h4>My Profile and Personal Library | Aug 2021</h4>
-            <p>Technology used: HTML, SCSS, JQuery.</p>
-            <p class="link">Link: <a target="_blank" href="https://huynhvangioiem.github.io/tla-library/">
-                <i>huynhvangioiem.github.io/tla-library/</i>
-              </a>
-            </p>
-            <p class="link">Source: <a target="_blank" href="https://github.com/huynhvangioiem/tla-library">
-                <i>github.com/huynhvangioiem/tla-library</i>
-              </a>
-            </p>
-          </div>
-          <div class="col-12 col-m-12 col-s-12 content">
-            <h4>"TLACard" - Website managing and selling card | Sep 2020 - Dec 2020</h4>
-            <p>Technology used: HTML, CSS, JQuery, Bootstrap, PHP, MySQL.</p>
-            <p>Main functions: manage and store the card numbers, manage transactions buy or sell the card, manage
-              transactions about finance.</p>
-            <p class="link">Source:
-              <a target="_blank" href="https://github.com/huynhvangioiem/tlacard">
-                <i>github.com/huynhvangioiem/tlacard</i>
-              </a>
-            </p>
-          </div>
-          <div class="col-12 col-m-12 col-s-12 content">
-            <h4>Milk Tea Shop Management System | Feb 2019 - June 2019</h4>
-            <p>Technology used: HTML, CSS, JQuery, Bootstrap, PHP, MySQL.</p>
-            <p>Main functions: including the home page with the image of the shop and functions such as remote ordering,
-              staff management and payroll, menu management, management revenue and expenditure management.</p>
-            <p class="link">Source:
-              <a target="_blank" href="https://github.com/huynhvangioiem/trasuahuynhhuong">
-                <i>github.com/huynhvangioiem/trasuahuynhhuong</i>
-              </a>
-            </p>
-          </div>
-          <div class="col-12 col-m-12 col-s-12 content">
-            <h4>Personal website</h4>
-            <p>Technology used: HTML, CSS, Bootstrap, PHP, MySQL.</p>
-            <p class="link">Source:
-              <a target="_blank" href="https://github.com/huynhvangioiem/tlait">
-                <i>github.com/huynhvangioiem/tlait</i>
-              </a>
-            </p>
+      </div>
+      <div class="col-12 col-m-12 col-s-12 code">
+        <pre><code class="html">
+&#60;div class="container-fluid"&#62;
+    &#60;div class="row"&#62;
+        &#60;div class="col-2 col-m-4 col-s-12"&#62;col-2 col-m-4 col-s-12&#60;/div&#62;
+        &#60;div class="col-2 col-m-4 col-s-12"&#62;col-2 col-m-4 col-s-12&#60;/div&#62;
+        &#60;div class="col-2 col-m-4 col-s-12"&#62;col-2 col-m-4 col-s-12&#60;/div&#62;
+        &#60;div class="col-2 col-m-4 col-s-12"&#62;col-2 col-m-4 col-s-12&#60;/div&#62;
+        &#60;div class="col-2 col-m-4 col-s-12"&#62;col-2 col-m-4 col-s-12&#60;/div&#62;
+        &#60;div class="col-2 col-m-4 col-s-12"&#62;col-2 col-m-4 col-s-12&#60;/div&#62;
+    &#60;/div&#62;
+    &#60;div class="row"&#62;
+        &#60;div class="col-3 col-m-6 col-s-6"&#62;col-3 col-m-6 col-s-6&#60;/div&#62;
+        &#60;div class="col-3 col-m-6 col-s-6"&#62;col-3 col-m-6 col-s-6&#60;/div&#62; 
+        &#60;div class="col-3 col-m-6 col-s-6"&#62;col-3 col-m-6 col-s-6&#60;/div&#62; 
+        &#60;div class="col-3 col-m-6 col-s-6"&#62;col-3 col-m-6 col-s-6&#60;/div&#62; 
+    &#60;/div&#62; 
+    &#60;div class="row"&#62; 
+        &#60;div class="col-4 col-m-12 col-s-12"&#62;col-4 col-m-12 col-s-12&#60;/div&#62; 
+        &#60;div class="col-4 col-m-12 col-s-12"&#62;col-4 col-m-12 col-s-12&#60;/div&#62; 
+        &#60;div class="col-4 col-m-12 col-s-12"&#62;col-4 col-m-12 col-s-12&#60;/div&#62; 
+    &#60;/div&#62; 
+    &#60;div class="row"&#62; 
+        &#60;div class="col-6 col-m-6 col-s-12"&#62;col-6 col-m-6 col-s-12&#60;/div&#62; 
+        &#60;div class="col-6 col-m-6 col-s-12"&#62;col-6 col-m-6 col-s-12&#60;/div&#62; 
+    &#60;/div&#62; 
+    &#60;div class="row"&#62; 
+        &#60;div class="col-12 col-m-12 col-s-12"&#62;col-12 col-m-12 col-s-12&#60;/div&#62; 
+    &#60;/div&#62; 
+    &#60;div class="row"&#62;
+        &#60;div class="col-4 col-m-0 col-s-0"&#62;col-4 col-m-0 col-s-0&#60;/div&#62; 
+        &#60;div class="col-8 col-m-12 col-s-12"&#62;col-8 col-m-12 col-s-12&#60;/div&#62; 
+    &#60;/div&#62; 
+    &#60;div class="row"&#62; 
+        &#60;div class="col-5 col-m-6 col-s-0"&#62;col-5 col-m-6 col-s-0&#60;/div&#62; 
+        &#60;div class="col-7 col-m-6 col-s-12"&#62;col-7 col-m-6 col-s-12&#60;/div&#62; 
+    &#60;/div&#62; 
+    &#60;div class="row"&#62; 
+        &#60;div class="col-4 col-m-4 col-s-6"&#62;col-4 col-m-4 col-s-6&#60;/div&#62; 
+        &#60;div class="col-4 col-m-4 col-s-6 col-o-4 col-m-o-4"&#62;col-4 col-m-4 col-s-6 col-o-4 col-m-o-4&#60;/div&#62; 
+    &#60;/div&#62; 
+    &#60;div class="row"&#62; 
+        &#60;div class="col-4 col-m-4 col-s-12 col-o-4 col-m-o-4"&#62;col-4 col-m-4 col-s-12 col-o-4 col-m-o-4&#60;/div&#62; 
+    &#60;/div&#62; 
+&#60;/div&#62;
+          </code>
+        </pre>
+      </div>
+      <!-- Example -->
+      <div class="col-12 col-m-12 col-s-12 sub_title" id="exampleLayout">
+        4. For Example: Here are the websites that apply this layout
+      </div>
+      <div class="col-12 col-m-12 col-s-12 demo">
+        <ul class="example">
+          <li><a href="./index.html">TLA Profile And Library</a></li>
+          <li><a href="#!">Trang So 2</a></li>
+          <li><a href="#!">Trang So 3</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Navigation -->
+    <div class="row" id="TLA_nav">
+      <div class="col-12 col-m-12 col-s-12 title">II. Navigation</div>
+      <!-- Basic example -->
+      <div class="col-12 col-m-12 col-s-12 sub_title" id="navBasic">1. Basic example</div>
+      <div class="col-12 col-m-12 col-s-12 description">
+        <p>A basic example of the navbar with the most common elements like link, search form, brand, and dropdown. </p>
+      </div>
+      <div class="col-12 col-m-12 col-s-12 demo">
+        <div class="container-fluid">
+          <nav class="navbar navbar-dark">
+            <a href="#!" class="navbar-brand">Brand</a>
+            <span class="navbar-toggler" data-target="#nav-1"><i class="fas fa-bars"></i></span>
+            <div class="navbar-collapse" id="nav-1">
+              <ul class="navbar-nav navbar-left">
+                <li class="nav-item">
+                  <a class="nav-link" href="#!">Home</a>
+                </li>
+                <li class="nav-item">
+                  <ul class="sub-nav">
+                    <li class="nav-item"><a href="#!">Sub nav 1</a></li>
+                    <li class="nav-item"><a href="#!">Sub nav 2</a></li>
+                    <li class="nav-item">
+                      <ul class="sub-nav">
+                        <li class="nav-item"><a href="#!">Sub nav 1</a></li>
+                        <li class="nav-item"><a href="#!">Sub nav 2</a></li>
+                        <li class="nav-item"><a href="#!">Sub nav 3</a></li>
+                      </ul>
+                      <a href="#!">Sub nav 3</a>
+                    </li>
+                    <li class="nav-item"><a href="#!">Sub nav 4</a></li>
+                  </ul>
+                  <a class="nav-link" href="#!">Item 1</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#!">Item 2</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#!">Item 3</a>
+                </li>
+              </ul>
+              <ul class="navbar-nav navbar-right">
+                <li class="nav-item nav-search">
+                  <form action="" method="get">
+                    <input type="text" name="search" id="" placeholder="Search">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                  </form>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#!">Sign In</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#!">Sign Out</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="col-12 col-m-12 col-s-12 code">
+        <pre>
+          <code class="html">
+&#60;div class="container-fluid"&#62;
+  &#60;nav class="navbar navbar-dark"&#62; 
+    &#60;a href="#!" class="navbar-brand"&#62;Brand&#60;/a&#62; 
+    &#60;span class="navbar-toggler" data-target="#menu"&#62;&#60;i class="fas fa-bars"&#62;&#60;/i&#62;&#60;/span&#62; 
+    &#60;div class="navbar-collapse" id="menu" &#62; 
+      &#60;ul class="navbar-nav navbar-left"&#62; 
+        &#60;li class="nav-item"&#62;&#60;a class="nav-link" href="#!"&#62;Home&#60;/a&#62;&#60;/li&#62; 
+        &#60;li class="nav-item"&#62; 
+          &#60;ul class="sub-nav"&#62; 
+            &#60;li class="nav-item"&#62;&#60;a href="#!"&#62;Sub nav 1&#60;/a&#62;&#60;/li&#62; 
+            &#60;li class="nav-item"&#62;&#60;a href="#!"&#62;Sub nav 2&#60;/a&#62;&#60;/li&#62; 
+            &#60;li class="nav-item"&#62;
+              &#60;ul class="sub-nav"&#62; 
+                &#60;li class="nav-item"&#62;&#60;a href="#!"&#62;Sub nav 1&#60;/a&#62;&#60;/li&#62; 
+                &#60;li class="nav-item"&#62;&#60;a href="#!"&#62;Sub nav 2&#60;/a&#62;&#60;/li&#62; 
+                &#60;li class="nav-item"&#62;&#60;a href="#!"&#62;Sub nav 3&#60;/a&#62;&#60;/li&#62; 
+              &#60;/ul&#62; 
+              &#60;a href="#!"&#62;Sub nav 3&#60;/a&#62; 
+            &#60;/li&#62; 
+            &#60;li class="nav-item"&#62;&#60;a href="#!"&#62;Sub nav 4&#60;/a&#62;&#60;/li&#62; 
+          &#60;/ul&#62; 
+          &#60;a class="nav-link" href="#!"&#62;Item 1&#60;/a&#62;
+        &#60;/li&#62; 
+        &#60;li class="nav-item"&#62;&#60;a class="nav-link" href="#!"&#62;Item 2&#60;/a&#62;&#60;/li&#62; 
+        &#60;li class="nav-item"&#62;&#60;a class="nav-link" href="#!"&#62;Item 3&#60;/a&#62;&#60;/li&#62;
+      &#60;/ul&#62; 
+      &#60;ul class="navbar-nav navbar-right"&#62; 
+        &#60;li class="nav-item nav-search"&#62; 
+          &#60;form action="" method="get"&#62; 
+            &#60;input type="text" name="search" id="" placeholder="Search"&#62; 
+            &#60;button type="submit"&#62;&#60;i class="fas fa-search"&#62;&#60;/i&#62;&#60;/button&#62; 
+          &#60;/form&#62; 
+        &#60;/li&#62; 
+        &#60;li class="nav-item"&#62;&#60;a class="nav-link" href="#!"&#62;Sign In&#60;/a&#62;&#60;/li&#62; 
+        &#60;li class="nav-item"&#62; &#60;a class="nav-link" href="#!"&#62;Sign Out&#60;/a&#62;&#60;/li&#62; 
+      &#60;/ul&#62;
+    &#60;/div&#62; 
+  &#60;/nav&#62; 
+&#60;/div&#62;
+          </code>
+        </pre>
+      </div>
+      <!-- Color schemes -->
+      <div class="col-12 col-m-12 col-s-12 sub_title" id="navColor">2. Color schemes</div>
+      <div class="col-12 col-m-12 col-s-12 description">
+        <p>Theming the navbar has never been easier thanks to the combination of theming classes and background-color
+          utilities. Choose from <i>.className</i> for corresponding background colors.</p>
+      </div>
+      <div class="col-12 col-m-12 col-s-12 demo">
+        <!-- light -->
+        <div class="container-fluid">
+          <nav class="navbar navbar-light">
+            <a href="#!" class="navbar-brand">Brand</a>
+            <span class="navbar-toggler" data-target="#nav-2"><i class="fas fa-bars"></i></span>
+            <div class="navbar-collapse" id="nav-2">
+              <ul class="navbar-nav navbar-left">
+                <li class="nav-item">
+                  <a class="nav-link" href="#!">Home</a>
+                </li>
+                <li class="nav-item">
+                  <ul class="sub-nav">
+                    <li class="nav-item"><a href="#!">Sub nav 1</a></li>
+                    <li class="nav-item"><a href="#!">Sub nav 2</a></li>
+                    <li class="nav-item">
+                      <ul class="sub-nav">
+                        <li class="nav-item"><a href="#!">Sub nav 1</a></li>
+                        <li class="nav-item"><a href="#!">Sub nav 2</a></li>
+                        <li class="nav-item"><a href="#!">Sub nav 3</a></li>
+                      </ul>
+                      <a href="#!">Sub nav 3</a>
+                    </li>
+                    <li class="nav-item"><a href="#!">Sub nav 4</a></li>
+                  </ul>
+                  <a class="nav-link" href="#!">Item 1</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#!">Item 2</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#!">Item 3</a>
+                </li>
+              </ul>
+              <ul class="navbar-nav navbar-right">
+                <li class="nav-item nav-search">
+                  <form action="" method="get">
+                    <input type="text" name="search" id="" placeholder="Search">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                  </form>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#!">Sign In</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#!">Sign Out</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <!-- primary -->
+        <div class="container-fluid">
+          <nav class="navbar navbar-primary">
+            <a href="#!" class="navbar-brand">Brand</a>
+            <span class="navbar-toggler" data-target="#nav-3"><i class="fas fa-bars"></i></span>
+            <div class="navbar-collapse" id="nav-3">
+              <ul class="navbar-nav navbar-left">
+                <li class="nav-item">
+                  <a class="nav-link" href="#!">Home</a>
+                </li>
+                <li class="nav-item">
+                  <ul class="sub-nav">
+                    <li class="nav-item"><a href="#!">Sub nav 1</a></li>
+                    <li class="nav-item"><a href="#!">Sub nav 2</a></li>
+                    <li class="nav-item">
+                      <ul class="sub-nav">
+                        <li class="nav-item"><a href="#!">Sub nav 1</a></li>
+                        <li class="nav-item"><a href="#!">Sub nav 2</a></li>
+                        <li class="nav-item"><a href="#!">Sub nav 3</a></li>
+                      </ul>
+                      <a href="#!">Sub nav 3</a>
+                    </li>
+                    <li class="nav-item"><a href="#!">Sub nav 4</a></li>
+                  </ul>
+                  <a class="nav-link" href="#!">Item 1</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#!">Item 2</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#!">Item 3</a>
+                </li>
+              </ul>
+              <ul class="navbar-nav navbar-right">
+                <li class="nav-item nav-search">
+                  <form action="" method="get">
+                    <input type="text" name="search" id="" placeholder="Search">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                  </form>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#!">Sign In</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#!">Sign Out</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <!-- danger -->
+        <div class="container-fluid">
+          <nav class="navbar navbar-danger">
+            <a href="#!" class="navbar-brand">Brand</a>
+            <span class="navbar-toggler" data-target="#nav-4"><i class="fas fa-bars"></i></span>
+            <div class="navbar-collapse" id="nav-4">
+              <ul class="navbar-nav navbar-left">
+                <li class="nav-item">
+                  <a class="nav-link" href="#!">Home</a>
+                </li>
+                <li class="nav-item">
+                  <ul class="sub-nav">
+                    <li class="nav-item"><a href="#!">Sub nav 1</a></li>
+                    <li class="nav-item"><a href="#!">Sub nav 2</a></li>
+                    <li class="nav-item">
+                      <ul class="sub-nav">
+                        <li class="nav-item"><a href="#!">Sub nav 1</a></li>
+                        <li class="nav-item"><a href="#!">Sub nav 2</a></li>
+                        <li class="nav-item"><a href="#!">Sub nav 3</a></li>
+                      </ul>
+                      <a href="#!">Sub nav 3</a>
+                    </li>
+                    <li class="nav-item"><a href="#!">Sub nav 4</a></li>
+                  </ul>
+                  <a class="nav-link" href="#!">Item 1</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#!">Item 2</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#!">Item 3</a>
+                </li>
+              </ul>
+              <ul class="navbar-nav navbar-right">
+                <li class="nav-item nav-search">
+                  <form action="" method="get">
+                    <input type="text" name="search" id="" placeholder="Search">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                  </form>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#!">Sign In</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#!">Sign Out</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <!-- success -->
+        <div class="container-fluid">
+          <nav class="navbar navbar-success">
+            <a href="#!" class="navbar-brand">Brand</a>
+            <span class="navbar-toggler" data-target="#nav-5"><i class="fas fa-bars"></i></span>
+            <div class="navbar-collapse" id="nav-5">
+              <ul class="navbar-nav navbar-left">
+                <li class="nav-item">
+                  <a class="nav-link" href="#!">Home</a>
+                </li>
+                <li class="nav-item">
+                  <ul class="sub-nav">
+                    <li class="nav-item"><a href="#!">Sub nav 1</a></li>
+                    <li class="nav-item"><a href="#!">Sub nav 2</a></li>
+                    <li class="nav-item">
+                      <ul class="sub-nav">
+                        <li class="nav-item"><a href="#!">Sub nav 1</a></li>
+                        <li class="nav-item"><a href="#!">Sub nav 2</a></li>
+                        <li class="nav-item"><a href="#!">Sub nav 3</a></li>
+                      </ul>
+                      <a href="#!">Sub nav 3</a>
+                    </li>
+                    <li class="nav-item"><a href="#!">Sub nav 4</a></li>
+                  </ul>
+                  <a class="nav-link" href="#!">Item 1</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#!">Item 2</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#!">Item 3</a>
+                </li>
+              </ul>
+              <ul class="navbar-nav navbar-right">
+                <li class="nav-item nav-search">
+                  <form action="" method="get">
+                    <input type="text" name="search" id="" placeholder="Search">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                  </form>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#!">Sign In</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#!">Sign Out</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <!-- warning -->
+        <div class="container-fluid">
+          <nav class="navbar navbar-warning">
+            <a href="#!" class="navbar-brand">Brand</a>
+            <span class="navbar-toggler" data-target="#nav-6"><i class="fas fa-bars"></i></span>
+            <div class="navbar-collapse" id="nav-6">
+              <ul class="navbar-nav navbar-left">
+                <li class="nav-item">
+                  <a class="nav-link" href="#!">Home</a>
+                </li>
+                <li class="nav-item">
+                  <ul class="sub-nav">
+                    <li class="nav-item"><a href="#!">Sub nav 1</a></li>
+                    <li class="nav-item"><a href="#!">Sub nav 2</a></li>
+                    <li class="nav-item">
+                      <ul class="sub-nav">
+                        <li class="nav-item"><a href="#!">Sub nav 1</a></li>
+                        <li class="nav-item"><a href="#!">Sub nav 2</a></li>
+                        <li class="nav-item"><a href="#!">Sub nav 3</a></li>
+                      </ul>
+                      <a href="#!">Sub nav 3</a>
+                    </li>
+                    <li class="nav-item"><a href="#!">Sub nav 4</a></li>
+                  </ul>
+                  <a class="nav-link" href="#!">Item 1</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#!">Item 2</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#!">Item 3</a>
+                </li>
+              </ul>
+              <ul class="navbar-nav navbar-right">
+                <li class="nav-item nav-search">
+                  <form action="" method="get">
+                    <input type="text" name="search" id="" placeholder="Search">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                  </form>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#!">Sign In</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#!">Sign Out</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <!-- info -->
+        <div class="container-fluid">
+          <nav class="navbar navbar-info">
+            <a href="#!" class="navbar-brand">Brand</a>
+            <span class="navbar-toggler" data-target="#nav-7"><i class="fas fa-bars"></i></span>
+            <div class="navbar-collapse" id="nav-7">
+              <ul class="navbar-nav navbar-left">
+                <li class="nav-item">
+                  <a class="nav-link" href="#!">Home</a>
+                </li>
+                <li class="nav-item">
+                  <ul class="sub-nav">
+                    <li class="nav-item"><a href="#!">Sub nav 1</a></li>
+                    <li class="nav-item"><a href="#!">Sub nav 2</a></li>
+                    <li class="nav-item">
+                      <ul class="sub-nav">
+                        <li class="nav-item"><a href="#!">Sub nav 1</a></li>
+                        <li class="nav-item"><a href="#!">Sub nav 2</a></li>
+                        <li class="nav-item"><a href="#!">Sub nav 3</a></li>
+                      </ul>
+                      <a href="#!">Sub nav 3</a>
+                    </li>
+                    <li class="nav-item"><a href="#!">Sub nav 4</a></li>
+                  </ul>
+                  <a class="nav-link" href="#!">Item 1</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#!">Item 2</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#!">Item 3</a>
+                </li>
+              </ul>
+              <ul class="navbar-nav navbar-right">
+                <li class="nav-item nav-search">
+                  <form action="" method="get">
+                    <input type="text" name="search" id="" placeholder="Search">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                  </form>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#!">Sign In</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#!">Sign Out</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="col-12 col-m-12 col-s-12 code">
+        <pre>
+          <code class="html">
+&#60;nav class="navbar navbar-light"&#62;
+  &#60;!-- Navbar content --&#62;
+&#60;/nav&#62;
+
+&#60;nav class="navbar navbar-primary"&#62;
+  &#60;!-- Navbar content --&#62;
+&#60;/nav&#62; 
+
+&#60;nav class="navbar navbar-danger"&#62; 
+  &#60;!-- Navbar content --&#62; 
+&#60;/nav&#62; 
+
+&#60;nav class="navbar navbar-success"&#62; 
+  &#60;!-- Navbar content --&#62; 
+&#60;/nav&#62; 
+
+&#60;nav class="navbar navbar-warning"&#62; 
+  &#60;!-- Navbar content --&#62; 
+&#60;/nav&#62; 
+
+&#60;nav class="navbar navbar-info"&#62; 
+  &#60;!-- Navbar content --&#62; 
+&#60;/nav&#62;
+          </code>
+        </pre>
+      </div>
+    </div>
+    <!-- Button -->
+    <div class="row" id="TLA_button">
+      <div class="col-12 col-m-12 col-s-12 title">III. Button</div>
+      <!-- basic example -->
+      <div class="col-12 col-m-12 col-s-12 sub_title" id="basicBtn">1. Basic Buttons</div>
+      <div class="col-12 col-m-12 col-s-12 description">
+        <p>TLA_button includes several predefined button styles, each serving its own semantic purpose, with a few
+          extras thrown in
+          for more control.</p>
+      </div>
+      <div class="col-12 col-m-12 col-s-12 demo">
+        <div class="container-fluid">
+          <div class="row">
+            <button type="button" class="btn btn-primary">Primary</button>
+            <button type="button" class="btn btn-secondary">Secondary</button>
+            <button type="button" class="btn btn-success">Success</button>
+            <button type="button" class="btn btn-danger">Danger</button>
+            <button type="button" class="btn btn-warning">Warning</button>
+            <button type="button" class="btn btn-info">Info</button>
+            <button type="button" class="btn btn-light">Light</button>
+            <button type="button" class="btn btn-dark">Dark</button>
+
+            <a href="#!" class="btn btn-primary">Link's style is a button</a>
           </div>
         </div>
-        <div class="row items" id="activity">
-          <div class="col-12 col-m-12 col-s-12 title">
-            <h3>activity</h3>
-          </div>
-          <div class="col-12 col-m-12 col-s-12 content">
-            <p>I have actively participated in activities for the benefit of the community and held various positions in
-              the Ho Chi Minh Communist Youth Union. From there, practice discipline, responsibility and a healthy
-              lifestyle.</p>
+      </div>
+      <div class="col-12 col-m-12 col-s-12 code">
+        <pre>
+          <code class="html">
+&#60;div class="container-fluid"&#62;
+  &#60;div class="row"&#62;
+    &#60;button type="button" class="btn btn-primary"&#62;Primary&#60;/button&#62;
+    &#60;button type="button" class="btn btn-secondary"&#62;Secondary&#60;/button&#62;
+    &#60;button type="button" class="btn btn-success"&#62;Success&#60;/button&#62;
+    &#60;button type="button" class="btn btn-danger"&#62;Danger&#60;/button&#62;
+    &#60;button type="button" class="btn btn-warning"&#62;Warning&#60;/button&#62;
+    &#60;button type="button" class="btn btn-info"&#62;Info&#60;/button&#62;
+    &#60;button type="button" class="btn btn-light"&#62;Light&#60;/button&#62;
+    &#60;button type="button" class="btn btn-dark"&#62;Dark&#60;/button&#62;
+
+    &#60;a href="#!" class="btn btn-primary"&#62;Link's style is a button&#60;/a&#62;
+  &#60;/div&#62; 
+&#60;/div&#62;
+          </code>
+        </pre>
+      </div>
+      <!-- Button Outline -->
+      <div class="col-12 col-m-12 col-s-12 sub_title" id="btnOutline">2. Outline Buttons</div>
+      <div class="col-12 col-m-12 col-s-12 description">
+        <p>In need of a button, but not the hefty background colors they bring? Replace the default modifier classes
+          with the <i>.btn-outline-*</i> ones to remove all background images and colors on any button.</p>
+      </div>
+      <div class="col-12 col-m-12 col-s-12 demo">
+        <div class="container-fluid">
+          <div class="row">
+            <button type="button" class="btn btn-outline-primary">Primary</button>
+            <button type="button" class="btn btn-outline-secondary">Secondary</button>
+            <button type="button" class="btn btn-outline-success">Success</button>
+            <button type="button" class="btn btn-outline-danger">Danger</button>
+            <button type="button" class="btn btn-outline-warning">Warning</button>
+            <button type="button" class="btn btn-outline-info">Info</button>
+            <button type="button" class="btn btn-outline-light">Light</button>
+            <button type="button" class="btn btn-outline-dark">Dark</button>
+
+            <a href="#!" class="btn btn-outline-primary">Link's style is a button</a>
           </div>
         </div>
+      </div>
+      <div class="col-12 col-m-12 col-s-12 code">
+        <pre>
+          <code class="html">
+&#60;div class="container-fluid"&#62;
+  &#60;div class="row"&#62;
+    &#60;button type="button" class="btn btn-outline-primary"&#62;Primary&#60;/button&#62;
+    &#60;button type="button" class="btn btn-outline-secondary"&#62;Secondary&#60;/button&#62;
+    &#60;button type="button" class="btn btn-outline-success"&#62;Success&#60;/button&#62;
+    &#60;button type="button" class="btn btn-outline-danger"&#62;Danger&#60;/button&#62;
+    &#60;button type="button" class="btn btn-outline-warning"&#62;Warning&#60;/button&#62;
+    &#60;button type="button" class="btn btn-outline-info"&#62;Info&#60;/button&#62;
+    &#60;button type="button" class="btn btn-outline-light"&#62;Light&#60;/button&#62;
+    &#60;button type="button" class="btn btn-outline-dark"&#62;Dark&#60;/button&#62;
+
+    &#60;a href="#!" class="btn btn-outline-primary"&#62;Link's style is a button&#60;/a&#62;
+  &#60;/div&#62; 
+&#60;/div&#62;
+          </code>
+        </pre>
+      </div>
+      <!-- Rounded -->
+      <div class="col-12 col-m-12 col-s-12 sub_title" id="btnRounded">3. Rounded Buttons</div>
+      <div class="col-12 col-m-12 col-s-12 description">
+        <p>Add <i>.btn-rounded</i> class to make the button rounded.</p>
+      </div>
+      <div class="col-12 col-m-12 col-s-12 demo">
+        <div class="container-fluid">
+          <div class="row">
+            <button type="button" class="btn btn-rounded btn-primary">Primary</button>
+            <button type="button" class="btn btn-rounded btn-outline-secondary">Secondary</button>
+            <button type="button" class="btn btn-rounded btn-success">Success</button>
+            <button type="button" class="btn btn-rounded btn-outline-danger">Danger</button>
+            <button type="button" class="btn btn-rounded btn-warning">Warning</button>
+            <button type="button" class="btn btn-rounded btn-outline-info">Info</button>
+            <button type="button" class="btn btn-rounded btn-light">Light</button>
+            <button type="button" class="btn btn-rounded btn-outline-dark">Dark</button>
+
+            <a href="#!" class="btn btn-rounded btn-outline-primary">Link's style is a button</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-m-12 col-s-12 code">
+        <pre>
+          <code class="html">
+&#60;div class="container-fluid"&#62;
+  &#60;div class="row"&#62;
+    &#60;button type="button" class="btn btn-rounded btn-primary"&#62;Primary&#60;/button&#62;
+    &#60;button type="button" class="btn btn-rounded btn-outline-secondary"&#62;Secondary&#60;/button&#62;
+    &#60;button type="button" class="btn btn-rounded btn-success"&#62;Success&#60;/button&#62;
+    &#60;button type="button" class="btn btn-rounded btn-outline-danger"&#62;Danger&#60;/button&#62;
+    &#60;button type="button" class="btn btn-rounded btn-warning"&#62;Warning&#60;/button&#62;
+    &#60;button type="button" class="btn btn-rounded btn-outline-info"&#62;Info&#60;/button&#62;
+    &#60;button type="button" class="btn btn-rounded btn-light"&#62;Light&#60;/button&#62;
+    &#60;button type="button" class="btn btn-rounded btn-outline-dark"&#62;Dark&#60;/button&#62;
+
+    &#60;a href="#!" class="btn btn-rounded btn-outline-primary"&#62;Link's style is a button&#60;/a&#62;
+  &#60;/div&#62; 
+&#60;/div&#62;
+          </code>
+        </pre>
+      </div>
+      <!-- Social -->
+      <div class="col-12 col-m-12 col-s-12 sub_title" id="btnSocial">4. Social Buttons</div>
+      <div class="col-12 col-m-12 col-s-12 description">
+        <p>Combining our icons and custom colors you can create social buttons. We use icons from <a
+            href="https://fontawesome.com/"><i>Fontawesome.com</i></a></p>
+      </div>
+      <div class="col-12 col-m-12 col-s-12 demo">
+        <div class="container-fluid">
+          <div class="row">
+            <!-- Facebook -->
+            <a class="btn btn-social" style="background-color: #3b5998;" href="#!">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+
+            <!-- Twitter -->
+            <a class="btn btn-rounded btn-social" style="background-color: #55acee;" href="#!">
+              <i class="fab fa-twitter"></i>
+            </a>
+
+            <!-- Google -->
+            <a class="btn btn-social" style="background-color: #dd4b39;" href="#!">
+              <i class="fab fa-google"></i>
+            </a>
+
+            <!-- Instagram -->
+            <a class="btn btn-rounded btn-social" style="background-color: #ac2bac;" href="#!">
+              <i class="fab fa-instagram"></i>
+            </a>
+
+            <!-- Linkedin -->
+            <a class="btn btn-social" style="background-color: #0082ca;" href="#!">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+
+            <!-- Pinterest -->
+            <a class="btn btn-rounded btn-social" style="background-color: #c61118;" href="#!">
+              <i class="fab fa-pinterest"></i>
+            </a>
+
+            <!-- Vkontakte -->
+            <a class="btn btn-social" style="background-color: #4c75a3;" href="#!">
+              <i class="fab fa-vk"></i>
+            </a>
+
+            <!-- Stack overflow -->
+            <a class="btn btn-rounded btn-social" style="background-color: #ffac44;" href="#!">
+              <i class="fab fa-stack-overflow"></i>
+            </a>
+
+            <!-- Youtube -->
+            <a class="btn btn-social" style="background-color: #ed302f;" href="#!">
+              <i class="fab fa-youtube"></i>
+            </a>
+
+            <!-- Slack -->
+            <a class="btn btn-rounded btn-social" style="background-color: #481449;" href="#!">
+              <i class="fab fa-slack-hash"></i>
+            </a>
+
+            <!-- Github -->
+            <a class="btn btn-social" style="background-color: #333333;" href="#!">
+              <i class="fab fa-github"></i>
+            </a>
+
+            <!-- Dribbble -->
+            <a class="btn btn-rounded btn-social" style="background-color: #ec4a89;" href="#!">
+              <i class="fab fa-dribbble"></i>
+            </a>
+
+            <!-- Reddit -->
+            <a class="btn btn-social" style="background-color: #ff4500;" href="#!">
+
+              <i class="fab fa-reddit-alien"></i>
+            </a>
+
+            <!-- Whatsapp -->
+            <a class="btn btn-rounded btn-social" style="background-color: #25d366;" href="#!">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-m-12 col-s-12 code">
+        <pre>
+          <code class="html">
+&#60;div class="container-fluid"&#62; 
+  &#60;div class="row"&#62; 
+    &#60;!-- Facebook --&#62; 
+    &#60;a class="btn btn-social" style="background-color: #3b5998;" href="#!"&#62; 
+      &#60;i class="fab fa-facebook-f"&#62;&#60;/i&#62; 
+    &#60;/a&#62;
+    &#60;!-- Twitter --&#62; 
+    &#60;a class="btn btn-rounded btn-social" style="background-color: #55acee;" href="#!"&#62; 
+      &#60;i class="fab fa-twitter"&#62;&#60;/i&#62; 
+    &#60;/a&#62;
+    &#60;!-- Google --&#62; 
+    &#60;a class="btn btn-social" style="background-color: #dd4b39;" href="#!"&#62; 
+      &#60;i class="fab fa-google"&#62;&#60;/i&#62; 
+    &#60;/a&#62;
+    &#60;!-- Instagram --&#62; 
+    &#60;a class="btn btn-rounded btn-social" style="background-color: #ac2bac;" href="#!"&#62; 
+      &#60;i class="fab fa-instagram"&#62;&#60;/i&#62; 
+    &#60;/a&#62;
+    &#60;!-- Linkedin --&#62; 
+    &#60;a class="btn btn-social" style="background-color: #0082ca;" href="#!"&#62; 
+      &#60;i class="fab fa-linkedin-in"&#62;&#60;/i&#62; 
+    &#60;/a&#62;
+    &#60;!-- Pinterest --&#62; 
+    &#60;a class="btn btn-rounded btn-social" style="background-color: #c61118;" href="#!"&#62; 
+      &#60;i class="fab fa-pinterest"&#62;&#60;/i&#62; 
+    &#60;/a&#62; 
+    &#60;!-- Vkontakte --&#62; 
+    &#60;a class="btn btn-social" style="background-color: #4c75a3;" href="#!"&#62; 
+      &#60;i class="fab fa-vk"&#62;&#60;/i&#62; 
+    &#60;/a&#62; 
+    &#60;!-- Stack overflow --&#62; 
+    &#60;a class="btn btn-rounded btn-social" style="background-color: #ffac44;" href="#!"&#62; 
+      &#60;i class="fab fa-stack-overflow"&#62;&#60;/i&#62; 
+    &#60;/a&#62; 
+    &#60;!-- Youtube --&#62; 
+    &#60;a class="btn btn-social" style="background-color: #ed302f;" href="#!"&#62; 
+      &#60;i class="fab fa-youtube"&#62;&#60;/i&#62;
+    &#60;/a&#62; 
+    &#60;!-- Slack --&#62; 
+    &#60;a class="btn btn-rounded btn-social" style="background-color: #481449;" href="#!"&#62; 
+      &#60;i class="fab fa-slack-hash"&#62;&#60;/i&#62;
+    &#60;/a&#62; 
+    &#60;!-- Github --&#62; 
+    &#60;a class="btn btn-social" style="background-color: #333333;" href="#!"&#62; 
+      &#60;i class="fab fa-github"&#62;&#60;/i&#62;
+    &#60;/a&#62; 
+    &#60;!-- Dribbble --&#62;
+    &#60;a class="btn btn-rounded btn-social" style="background-color: #ec4a89;" href="#!"&#62; 
+      &#60;i class="fab fa-dribbble"&#62;&#60;/i&#62; 
+    &#60;/a&#62; 
+    &#60;!-- Reddit --&#62; 
+    &#60;a class="btn btn-social" style="background-color: #ff4500;" href="#!"&#62; 
+      &#60;i class="fab fa-reddit-alien"&#62;&#60;/i&#62; 
+    &#60;/a&#62; 
+    &#60;!-- Whatsapp --&#62; 
+    &#60;a class="btn btn-rounded btn-social" style="background-color: #25d366;" href="#!"&#62; 
+      &#60;i class="fab fa-whatsapp"&#62;&#60;/i&#62;
+    &#60;/a&#62; 
+  &#60;/div&#62;
+&#60;/div&#62;
+          </code>
+        </pre>
+      </div>
+    </div>
+    <!-- Toast Message -->
+    <div class="row" id="TLA_Toast">
+      <div class="col-12 col-m-12 col-s-12 title">IV. Toast Message</div>
+      <div class="col-12 col-m-12 col-s-12 sub_title" id="basicToast">1. Basic Toast</div>
+      <div class="col-12 col-m-12 col-s-12 description">
+        <p>Push notifications to your visitors with a toast, a lightweight and easily customizable alert message. Click
+          these buttons to call toast messages.</p>
+      </div>
+      <div class="col-12 col-m-12 col-s-12 demo">
+        <div class="container-fluid">
+          <div class="row">
+            <button type="button" onclick="showToast('primary');" class="btn btn-primary">Primary</button>
+            <button type="button" onclick="showToast('secondary');" class="btn btn-secondary">Secondary</button>
+            <button type="button" onclick="showToast('success');" class="btn btn-success">Success</button>
+            <button type="button" onclick="showToast('danger');" class="btn btn-danger">Danger</button>
+            <button type="button" onclick="showToast('warning');" class="btn btn-warning">Warning</button>
+            <button type="button" onclick="showToast('info');" class="btn btn-info">Info</button>
+            <button type="button" onclick="showToast('light');" class="btn btn-light">Light</button>
+            <button type="button" onclick="showToast('dark');" class="btn btn-dark">Dark</button>
+          </div>
+          <div id="toast"></div>
+        </div>
+      </div>
+      <div class="col-12 col-m-12 col-s-12 sub_title">How to use?</div>
+      <div class="col-12 col-m-12 col-s-12 description">
+        <p>With toast messages you can call it anywhere as a javascript function! But in html yoy must have <i>&#60;div
+            id="toast"&#62;&#60;/div&#62;</i>.This example use a button to call the toast. Its source code is as
+          follows:</p>
+      </div>
+      <div class="col-12 col-m-12 col-s-12 code">
+        <pre>
+          <code class="html">
+&#60;!-- HTML --&#62;
+&#60;div id="toast"&#62;&#60;/div&#62;
+&#60;button type="button" onclick="showToast();" class="btn btn-primary"&#62;Primary&#60;/button&#62;
+&#60;!-- Javascript --&#62;
+&#60;script&#62;
+  function showToast() { 
+    toast({ 
+      title: "This is title of message.", //Message title
+      message: " This is a content of message. This message's style Success!", //Message content 
+      style: "success", //Style of message 
+      duration: 5000, //duration - default duration is 10s 
+      iconType: "info" //icon for message - have four icons: info, success, warning, danger. If you omit this attribute, the default will be same the "style" or not displayed
+    }); 
+  }
+&#60;/script&#62;
+          </code>
+        </pre>
+      </div>
+      <div class="col-12 col-m-12 col-s-12 sub_title" id="coloredToast">2. Colored Toast</div>
+      <div class="col-12 col-m-12 col-s-12 description">
+        <p>If you want to change the background color for toast. You can find out the example follow.</p>
+      </div>
+      <div class="col-12 col-m-12 col-s-12 demo">
+        <div class="container-fluid">
+          <div class="row">
+            <button type="button" onclick="showToast('primary-colored');" class="btn btn-primary">Primary</button>
+            <button type="button" onclick="showToast('secondary-colored');" class="btn btn-secondary">Secondary</button>
+            <button type="button" onclick="showToast('success-colored');" class="btn btn-success">Success</button>
+            <button type="button" onclick="showToast('danger-colored');" class="btn btn-danger">Danger</button>
+            <button type="button" onclick="showToast('warning-colored');" class="btn btn-warning">Warning</button>
+            <button type="button" onclick="showToast('info-colored');" class="btn btn-info">Info</button>
+            <button type="button" onclick="showToast('light-colored');" class="btn btn-light">Light</button>
+            <button type="button" onclick="showToast('dark-colored');" class="btn btn-dark">Dark</button>
+          </div>
+          <div id="toast"></div>
+        </div>
+      </div>
+      <div class="col-12 col-m-12 col-s-12 code">
+        <pre>
+          <code class="html">
+&#60;!-- HTML --&#62;
+&#60;div id="toast"&#62;&#60;/div&#62;
+&#60;button type="button" onclick="showToast();" class="btn btn-success"&#62;Success&#60;/button&#62;
+&#60;!-- Javascript --&#62;
+&#60;script&#62;
+  function showToast() { 
+    toast({ 
+      style: "success-colored", //Style of message 
+    }); 
+  }
+&#60;/script&#62;
+          </code>
+        </pre>
+      </div>
+      <div class="col-12 col-m-12 col-s-12 sub_title" id="outlineToast">3. Outline Toast</div>
+      <div class="col-12 col-m-12 col-s-12 description">
+      </div>
+      <div class="col-12 col-m-12 col-s-12 demo">
+        <div class="container-fluid">
+          <div class="row">
+            <button type="button" onclick="showToast('primary-outline');" class="btn btn-primary">Primary</button>
+            <button type="button" onclick="showToast('secondary-outline');" class="btn btn-secondary">Secondary</button>
+            <button type="button" onclick="showToast('success-outline');" class="btn btn-success">Success</button>
+            <button type="button" onclick="showToast('danger-outline');" class="btn btn-danger">Danger</button>
+            <button type="button" onclick="showToast('warning-outline');" class="btn btn-warning">Warning</button>
+            <button type="button" onclick="showToast('info-outline');" class="btn btn-info">Info</button>
+            <button type="button" onclick="showToast('light-outline');" class="btn btn-light">Light</button>
+            <button type="button" onclick="showToast('dark-outline');" class="btn btn-dark">Dark</button>
+          </div>
+          <div id="toast"></div>
+        </div>
+      </div>
+      <div class="col-12 col-m-12 col-s-12 code">
+        <pre>
+          <code class="html">
+&#60;!-- HTML --&#62;
+&#60;div id="toast"&#62;&#60;/div&#62;
+&#60;button type="button" onclick="showToast();" class="btn btn-success"&#62;Success&#60;/button&#62;
+&#60;!-- Javascript --&#62;
+&#60;script&#62;
+  function showToast() { 
+    toast({ 
+      style: "success-colored", //Style of message 
+    }); 
+  }
+&#60;/script&#62;
+          </code>
+        </pre>
       </div>
     </div>
     <div class="row footer">
-      <div class="col-6 col-m-6 col-s-12 text-center"><a href="./">Copyright © 2021 TLA</a></div>
+      <div class="col-6 col-m-6 col-s-12 text-center"><a href="#">Copyright © 2021 TLA</a></div>
       <div class="col-6 col-m-6 col-s-12 text-center">
-        <a target="_blank" class="btn btn-social" style="background-color: #333333;" href="https://github.com/huynhvangioiem"> 
+        <a target="_blank" class="btn btn-social" style="background-color: #333333;"
+          href="https://github.com/huynhvangioiem">
           <i class="fab fa-github"></i>
-        </a>
-        <a target="_blank" class="btn btn-social" style="background-color: #3b5998;" href="https://www.facebook.com/huynhvangioiem"> 
-          <i class="fab fa-facebook-f"></i>
-        </a>
-        <a target="_blank" class="btn btn-social" style="background-color: #F57C00;" href="https://nhatkytoilaai.blogspot.com/"> 
-          <i class="fab fa-blogger"></i>
-        </a>
-        <a class="btn btn-social" style="background-color: #ed302f;" href="https://www.youtube.com/channel/UCUjya8sBXS40uYW5S1Yi7sA"> 
-          <i class="fab fa-youtube"></i>
-        </a> 
-        <a target="_blank" class="btn btn-social" style="background-color: #fff" href="https://zalo.me/0335687425"> 
-          <img width="16px" src="https://chat.zalo.me/favicon-96x96.v1.png" alt="">
         </a>
       </div>
     </div>
-
   </div>
 </body>
 
